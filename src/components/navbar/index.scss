@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+}
+nav {
+    max-width: 1220px;
+    margin: 0px auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 900;
+    .logo  {
+        max-height: 20px;
+    }
+    .links {
+        @media screen and (max-width: 1120px) {
+            display: none;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+        }
+    }
+    .auth-links {
+        ul {
+            list-style: none;
+            display:  flex;
+            align-items: center;
+            // gap: 20px;
+            .transparent {
+                background: transparent;
+                border: none;
+                padding: 5px 10px;
+            }
+            .transparent:hover {
+                color: #0152fe;
+            }
+            .solid {
+                border: 1px solid #0152fe;
+                background: #0152fe;
+                padding: 10px 17px;
+                color: #fff;
+                border-radius: 4px;
+            }
+        }
+    }
+}
